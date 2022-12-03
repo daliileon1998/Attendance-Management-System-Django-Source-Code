@@ -11,9 +11,9 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                        <th style="width: 25%">Student USN</th>
-                        <th style="width: 25%">Student Name</th>
-                        <th style="width: 25%">Attendance</th>
+                        <th style="width: 25%">Código Estudiante</th>
+                        <th style="width: 25%">Nombre Estudiante</th>
+                        <th style="width: 25%">Asistencia</th>
                         <th style="width: 25%">CIE</th>
                   </thead>
                   <tbody>
@@ -33,7 +33,7 @@
                         {% endif %}
                     </tr>
                     {% empty %}
-                            <p>student has no courses</p>
+                            <p>El estudiante no tiene cursos</p>
                     {% endfor %}
 
                   </tbody>

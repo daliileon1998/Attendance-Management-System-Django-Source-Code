@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-          <a class="navbar-brand" href="{% url 'index' %}">College Management System</a>
+          <a class="navbar-brand" href="{% url 'index' %}">Systema</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -65,11 +65,11 @@
               </a>
               <div class="card-body">
               <h4 class="card-title">Attendance</h4>
-              <p class="card-text">View the attendance status for each of your courses. The attendance of each course is
-                  also displayed as list of classes that were conducted.</p>
+              <p class="card-text">Vea el estado de asistencia para cada uno de sus cursos. La asistencia a cada curso es
+                también se muestra como una lista de las clases que se llevaron a cabo.</p>
             </div>
             <div class="card-footer">
-                <a class="btn btn-primary" role="button" href="{% url 'attendance' request.user.student.USN %}"> View Attendance</a>
+                <a class="btn btn-primary" role="button" href="{% url 'attendance' request.user.student.USN %}">Ver Asistencia</a>
             </div>
           </div>
         </div>
@@ -80,12 +80,11 @@
                 <img class="card-img-top" src="{% static 'info/images/marks.jpg' %}" alt="">
               </a>
               <div class="card-body">
-              <h4 class="card-title">Marks</h4>
-              <p class="card-text">View the marks obtained for each of your courses. These include the marks of 3
-                  internal assessment, 2 events and the Semester End Exam  </p>
+              <h4 class="card-title">Calificaciones</h4>
+              <p class="card-text">Consulta las notas obtenidas en cada uno de tus cursos. Estos incluyen las notas de Trabajo Independiente, Quiz, Autoevaluación y Evaluación Parcial</p>
             </div>
             <div class="card-footer">
-                <a class="btn btn-primary" role="button" href="{% url 'marks_list' request.user.student.USN %}">View Marks</a>
+                <a class="btn btn-primary" role="button" href="{% url 'marks_list' request.user.student.USN %}">Ver Calificaciones</a>
             </div>
           </div>
         </div>
@@ -97,8 +96,8 @@
               </a>
               <div class="card-body">
               <h4 class="card-title">TimeTable</h4>
-              <p class="card-text">View the timetable in a tabular form. The timetable displays all the courses of the
-                  student and the time and day at which they are conducted.</p>
+              <p class="card-text">Ver el calendario en forma de tabla. El horario muestra todos los cursos de la
+                estudiante y la hora y el día en que se llevan a cabo.</p>
             </div>
             <div class="card-footer">
                 <a class="btn btn-primary" role="button" href="{% url 'timetable' request.user.student.class_id_id %}">View TimeTable</a>
@@ -117,12 +116,12 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">¿Seguro que deseas cerrar Sesión?</h5>
             <button class="close" type="button" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
           </div>
-          <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+          <div class="modal-body">Seleccione "Cerrar sesión" a continuación si está listo para finalizar su sesión actual.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
             <a class="btn btn-primary" href="/accounts/logout">Cerrar Sesión</a>

@@ -13,7 +13,7 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
               <thead>
                 <tr>
-                    <th>Student name</th>
+                    <th>Nombre Estudiante</th>
                     <th></th>
                 </tr>
               </thead>
@@ -25,11 +25,11 @@
                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
 
                                 <label class="btn btn-outline-success active">
-                                    <input type="radio" name="{{ s.USN }}" id="option1" autocomplete="off" value="present" checked> Present
+                                    <input type="radio" name="{{ s.USN }}" id="option1" autocomplete="off" value="present" checked> Presente
                                 </label>
 
                                 <label class="btn btn-outline-danger">
-                                    <input type="radio" name="{{ s.USN }}" id="option2" autocomplete="off" value="absent"> Absent
+                                    <input type="radio" name="{{ s.USN }}" id="option2" autocomplete="off" value="absent"> Ausente
                                 </label>
                         </div>
                     </td>
@@ -47,7 +47,7 @@
 
 
 {% else %}
-    <p>No students in Class</p>
+    <p>No hay estudiantes registrados en la clase</p>
 {% endif %}
 
 {% endblock %}
